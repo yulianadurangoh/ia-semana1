@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasaporte del primer asistente</title>
+  <style>
+body { font-family: Ubuntu, system-ui, sans-serif; background: #f6f5ff; color: #181e4b; margin: 0; }
+.pasaporte { max-width: 620px; margin: 1.5rem auto; background: #fff; border: 2px dashed #5d44ff; border-radius: 18px; padding: 1.25rem 1.6rem; box-shadow: 0 6px 20px rgba(24, 30, 75, .08); }
+.sello { display: inline-block; background: #5d44ff; color: #fff; border-radius: 999px; padding: .2rem .8rem; font-size: .8rem; letter-spacing: .04em; }
+h1 { color: #5d44ff; margin: .5rem 0 1rem; }
+#problema { font-size: 1.1rem; font-weight: 600; }
+#alcance .si::before { content: "✅ "; }
+#alcance .no::before { content: "🚫 "; }
+#datos .necesario::before { content: "📄 "; }
+#datos .privado::before { content: "🔒 No pedirá: "; }
+#alcance, #datos { list-style: none; padding-left: 0; }
+#limite { background: #fff8e6; border-left: 4px solid #f5a623; padding: .6rem .9rem; border-radius: 8px; }
+  </style>
+</head>
+<body>
+<article class="pasaporte">
+  <p class="sello">🛂 Pasaporte del primer asistente</p>
+  <h1>Brújula del clan</h1>
+
+  <p id="problema">Ayudaré a los coders del clan a encontrar fechas, temas y entregas del entrenamiento.</p>
+
+  <h2>Alcance</h2>
+  <ul id="alcance">
+    <li class="si">¿Cuándo se entrega el reto de Algoritmia?</li>
+    <li class="no">¿Qué nota voy a sacar en la prueba?</li>
+  </ul>
+
+  <h2>Datos</h2>
+  <ul id="datos">
+    <li class="necesario">Calendario y planeador del clan</li>
+    <li class="privado">Documento de identidad del coder</li>
+  </ul>
+
+  <h2>Regla, modelo y humano</h2>
+  <ol id="rmh">
+    <li>R: si la pregunta está vacía, pide que la escriban.</li>
+    <li>M: redacta una explicación basada en el material del tema.</li>
+    <li>H: un coach revisa las respuestas sobre notas o excepciones.</li>
+  </ol>
+
+  <p id="limite">Todavía no tengo esa información en el material del clan. Pregúntale a tu coach.</p>
+</article>
+</body>
+</html>
